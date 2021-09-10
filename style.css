@@ -1,0 +1,1110 @@
+/*
+Theme Name: Odontologia Integrada Andrea Rosa
+Theme URI: www.odontologiaintegradabhz.com.br
+Author: Felipe Marcos
+Author URI: felipemarcosti.com.br
+Description: Tema para o website do consultorio Odontologia Integrada Andrea Rosa
+Version: 1.0
+Tags: odontologia, consultorio, tratamentos, especialidade, dentistas, contato, clinica geral, Fale conosco, odontopediatria, hebiatria, thd, prevenção bucal, blog, noticias, ultimas noticias
+Text Domain: Odontologia Integrada
+*/
+@import url("css/bootstrap.min.css");
+/*-> RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+	transition: All 0.5s;	
+}
+
+
+/*PROPRIEDADE DE ELEMENTOS*/
+
+html { overflow-y: scroll; }
+html { overflow: -moz-scrollbars-vertical; }
+html { overflow-x: auto; }
+
+/*
+Ajuste de alinhamento de imagem do editor: WP
+*/
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	min-width: 100%;
+	cursor:url("images/cursor.cur"), default;
+}
+
+h1{
+	font-size: 36px;
+}
+
+h2{
+	font-size: 28px;
+}
+
+h3{
+	font-size: 22px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+h5{
+	font-size: 14px;
+}
+
+h6{
+	font-size: 12px;
+}
+
+p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #555;
+	text-align: justify;
+}
+
+strong, b{
+	font-weight: bold;	
+}
+
+italic, i, em{
+	font-style:italic;
+}
+
+
+
+
+
+a{
+	cursor:url("images/cursor.cur"), default;
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover{
+	cursor:url("images/cursor.cur"), default;
+	color: #FFCC00;
+	text-decoration: none;
+}
+
+/*a:visited{
+	color: #000;
+	text-decoration: none;
+}*/
+
+a:active{
+	cursor:url("images/cursor.cur"), default;
+	color: #000;
+	text-decoration: none;
+}
+
+a:focus{
+	cursor:url("images/cursor.cur"), default;
+	color: #000;
+	text-decoration: none;
+}
+
+/*CLASSES*/
+
+.clear{
+	clear: both;
+}
+
+.pageWidth{
+	width: 980px;
+	margin: 0 auto;
+	
+}
+
+#conteudo{
+
+	height:auto;
+}
+
+	
+
+/*id */
+#cabecalho{
+		position:relative;
+		padding:5px 5px 5px 5px;
+		height:130px;
+
+}
+#logo{
+	position:relative;
+	width:30%;
+  
+}
+#logoimg{
+	position:relative;
+	width:250px;
+	padding: 10px 10px 10px 10px;
+	float:left;
+
+}
+
+#header_right{
+	padding: 10px 10px 10px 10px;
+	float:right;
+	width:70%;
+	height:auto;	
+
+	
+}
+
+#contato{
+	float:right;
+	position:relative;
+	height:auto;
+	width:50%;
+    
+	 
+}
+
+
+
+
+#contato img{
+	float:right;
+	padding-right:5px;
+	width:35px;
+	height:35px; 
+	
+}
+
+#contato b{
+	padding-top:2px;
+	font-size:20px;
+	float:right;
+	text-align:right;
+
+}
+
+
+#social{
+	padding-top:14px;
+	position:relative;
+	float:right;
+	height:50px;
+	width:100%;
+	
+}
+
+.face{
+	cursor:url("images/cursor.cur"), default;
+	background-position: top right;
+	background-size: 30px 32px;
+	display:block;
+	background-repeat:no-repeat;
+	float:right;
+	width:35px;
+	height:35px;
+	background-image:url("images/Face.png");
+	
+}              
+
+.face:hover{
+	cursor:url("images/cursor.cur"), default;
+	background-position: top right;
+	background-size:30px 32px;
+	background-image:url("images/face2.png");
+}
+
+.insta{
+	cursor:url("images/cursor.cur"), default;
+	background-position: top right;
+	background-size:30px 32px;
+	display:block;
+	background-repeat:no-repeat;
+	float:right;
+	width:35px;
+	height:35px;
+	background-image:url("images/Insta.png");
+	
+}              
+
+.insta:hover{
+	cursor:url("images/cursor.cur"), default;
+	background-position: top right;
+	background-size:30px 32px;
+	background-image:url("images/insta2.png");
+}
+.linke{
+	cursor:url("images/cursor.cur"), default;
+	background-position: top right;
+	background-size:30px 32px;
+	display:block;
+	background-repeat:no-repeat;
+	float:right;
+	width:35px;
+	height:35px;
+	background-image:url("images/Linke.png");
+	
+}              
+
+.linke:hover{
+	cursor:url("images/cursor.cur"), default;
+	background-position: top right;
+	background-size:30px 32px;
+	background-image:url("images/linke2.png");
+
+}
+
+nav{
+	position:relative;    /**/
+	height:45px;
+	background-image:url("images/menu_background.png");
+	box-shadow:5px 5px 5px #CCCCCC;
+	}
+
+/* Reset CSS */
+*, *:after, *:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+#mobile-menu{
+	
+	display:none;
+}
+
+#conteudomenu{
+
+	padding-left:0px;
+}
+
+/* Fundo do menu */
+.menu{
+    padding:0;
+	position:absolute;
+	
+
+	
+
+}
+/* Remove as bolinhas do lado das listas */
+.menu{
+  list-style: none;
+}
+.sub-menu{
+  list-style: none;
+}
+/* Configura todos os links do nosso menu */
+.menu a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  cursor:url("images/cursor.cur"), default;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing:0.2em;
+
+}
+/* Faz os <li>s ficarem na horizontal */
+.menu  li{
+  float: left;
+  position: relative;
+  color:#000000;
+}
+/* Configura os links do menu principal */
+.menu  li > a {
+  padding: 12px 12px 12px 24px;
+  margin: 0 5px;
+  font-family: 'Roboto', sans-serif;
+  padding-right:20px;
+  
+  
+}
+/* Configura o fundo do menu principal quando com mouse hover */
+.menu li:hover a {
+  color:#C0C0C0;
+  font-family: 'Roboto', sans-serif;
+  cursor:url("images/cursor.cur"), default;
+}
+
+/* Mostra o submenu no evento de mouse hover */
+.menu  li:hover > .sub-menu {
+  display: block;
+}
+/* Configura o estilo do submenu */
+.menu  li > .sub-menu {
+  position: absolute;
+  top: 45px;
+  left: 5px;
+  background: #B98DE6;
+  min-width: 100%;
+  z-index: 1000;
+  display: none;
+   border-radius: 0px 0px 5px 5px;
+   opacity:0.9;
+   
+
+}
+/* Configura os links do submenu */
+.menu  li > .sub-menu > li > a {
+	padding-left:18px;
+	
+	font-size:14px;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+}
+
+.menu  li > .sub-menu > li > a:hover {
+	padding-left:18px;
+	
+	font-size:14px;
+	color:#FFCC00;
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+	
+}
+
+/* Clearfix para o menu */
+.menu:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+#slide{
+	position:relative;
+	padding:0px;
+	margin:0 auto;
+	
+}
+.cycloneslider-caption{
+
+	height:auto;
+ 
+}
+
+.cycloneslider-caption-title{
+	position:relative;
+	background-color:#B98DE6;
+	opacity:70;
+	width:40%;
+	margin-bottom:50px;
+	
+}
+.cycloneslider-caption-description{
+	position:relative;
+	background-color:#B98DE6;
+	opacity:70;
+	width:40%;
+	margin-bottom:50px;
+	
+}
+
+#conteudo{
+	position:relative;
+	height:auto;
+	
+}
+
+#controle{
+	padding-left:60px;
+	
+}
+
+#especialidade{
+	width:100%;
+	height:auto;
+	float:left;
+	
+}
+
+
+#image_espe{
+	position:relative;
+	width:21.3%;
+	height:225px;
+	float:left;
+	margin-right:32px;
+	margin-bottom:10px;
+    
+}
+
+#image_espe:hover
+{   
+	width:21.3%;
+	height:225px;
+	float:left;
+	cursor:url("images/cursor.cur"), default;
+	margin-right:32px;
+	margin-bottom:10px;
+}
+
+
+
+
+#especialidade h3{
+	
+	width:100%;	
+	float:left;
+	color:#B98DE6;
+	font-weight: bold;
+}
+
+
+
+#espe-resumo  p{
+
+	position:relative;
+	display:block;
+	color:#ffffff;
+	font-size: 14px;	
+	opacity:0;
+	text-align:justify;
+}
+
+#espe-resumo p:hover{
+
+	position:relative;
+	color:#ffffff;
+	font-size: 14px;	
+	opacity:1;
+	text-align:justify;
+	
+}
+
+#espe-description {
+	width:100%;
+	position:relative;
+	background-color:#B98DE6;
+	opacity:0.8;
+	height:50px;;
+	color:fff;
+
+	padding: 5px 5px 5px 5px;
+	top:-49px;
+	
+}
+
+#espe-description:hover {
+	width:100%;
+	position:relative;
+	background-color:#FFCC00;
+	height:95px;
+	color:#fff;
+	padding: 5px 5px 5px 5px;
+	top:-94px;
+	opacity:0.9;
+}
+
+
+
+#espe-description b {
+	height:auto;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff ;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+#categoria-desc{
+	
+	margin: 0in; font-family: calibri; font-size: 14.0pt; color: #4b4079;
+}
+
+.blog{
+	width:100%;
+	height:auto;
+	float:left;
+	
+
+}
+
+.blog-img{
+	
+	position:relative;
+	width:50%;
+	height:170px;
+	float:left;
+	border-radius: 15px 15px 15px 15px;
+	padding-left:10px;
+	margin-bottom:10px;
+	padding:10px;
+}
+
+#blog-thumb{
+
+	float:left;
+	width:30%;
+	height:auto;
+}
+
+.blog-description{
+	position:relative;
+	float:right;
+	width:70%;
+	padding-left:10px;
+}
+
+
+.blog-title{
+	position:relative;
+	font-weight: bold;
+	font-size:18px;
+	
+}
+
+.blog-resumo{
+	position:relative;
+    text-align:justify;	
+}
+
+.blog-resumo a{
+	border-radius: 5px 5px 5px 5px;
+	float:right;
+	color:#fff;	
+	background-color:#B98DE6;
+	height:auto;
+	width:30%;
+	text-align:center;
+	position:relative;
+	padding:2px;
+}
+
+.blog-resumo a:hover{
+	color:#FFCC00;	
+	float:right;
+	cursor:url("images/cursor.cur"), default;
+	
+}
+#rodape{
+	position:relative;
+	height:auto;
+	background-color:#F1F1F1;	
+}
+
+#rodape-widget{
+	position:relative;
+	font-family: 'Roboto', sans-serif;
+	height:185px;
+	width:50%;
+	margin-top:10px;
+	float:left;
+}
+
+#footer-widgets{
+	position:relative;
+
+}
+
+#footer-copyright{
+	position:relative;
+	background-color:#CCCCCC;
+	clear:both;
+}
+#copyRight{
+	text-align:center;
+}
+#rodape-tablet{
+	display:none;
+	
+}
+
+#rodape-mobile{
+	display:none;
+	
+}
+
+
+
+#rodape-widget:hover{
+	position:relative;
+	float:left;
+	width:50%;
+	box-shadow: 5px 5px 5px 2px #C8C5E2;
+
+}
+
+#endereco{
+	position:relative;
+	font-family: 'Roboto', sans-serif;
+	height:auto;
+	width:34%;
+	margin-top:10px;
+	float:right;
+}
+
+#rodape-widget h3{
+	color:#B98DE6;	
+}
+
+
+#endereco h3{
+	color:#B98DE6;	
+	
+}
+
+#endereco-descricao{
+	top:o;
+	height:auto;
+	float:rigth;
+	width:100%;
+	
+	
+}
+
+#endereco-descricao p{
+	text-align:left;
+	
+}
+#email{
+	position:relative;
+    height:auto;
+	float:right;
+	width:100%;
+}
+#email-desc{
+	position:relative;
+	width:90%;
+	font-size:15px;
+	float:right;
+}
+#email-img{
+	position:relative;
+	width:10%;
+	float:left;
+	
+}
+#topo{
+	position:relative;
+	height:auto;
+	width:10%;
+	top:3px;
+	float:right;
+}
+
+#topo:hover{
+	position:relative;
+	height:auto;
+	width:10%;
+	top:-10px;
+	float:right;
+	cursor:url("images/cursor.cur"), default;
+
+}
+
+
+
+
+
+img 
+  { max-width:100%; 
+   max-height:100%;
+  }
+
+ 
+  
+.attachment-post-thumbnail {
+      max-width:100%; 
+      height:100% ;
+ 
+	
+}
+
+
+/
+.wp-post-image{
+	position:relative;
+	display:block;
+	background-size:100%;
+    background-repeat: no-repeat;
+	
+}
+
+
+
+.wp-post-image:hover{
+position:relative;
+
+opacity:0.5;
+max-width:100%; 
+background-repeat: no-repeat;
+cursor:url("images/cursor.cur"), default;
+}
+
+
+
+
+
+
+#titulo h2{
+
+width:100%;	
+float:left;
+color:#B98DE6;
+font-weight: bold;
+margin-top:20px;
+}
+
+#categoria h2{
+
+width:100%;	
+float:left;
+color:#B98DE6;
+font-weight: bold;
+margin-top:20px;	
+}
+
+.blog h3{
+	
+width:100%;	
+float:left;
+color:#B98DE6;
+font-weight: bold;
+margin-top:20px;
+	
+}
+
+#formulario h2{
+
+width:100%;	
+float:left;
+color:#B98DE6;
+font-weight: bold;
+margin-top:20px;
+}
+
+
+#titulo hr{
+	position:relative;
+	width:100%;
+        float:left;
+}
+
+#categoria hr{
+	position:relative;
+	width:100%;
+float:left;
+}
+
+#formulario hr{
+	position:relative;
+	width:100%;
+float:left;
+}
+
+#especialidade hr{
+	position:relative;
+	width:100%;
+float:left;
+}
+
+.blog hr{
+	position:relative;
+	width:100%;
+float:left;
+}
+
+.info hr{
+	position:relative;
+	width:100%;
+	float:left;
+}
+
+/******************************
+POST SINGLE 
+******************************/
+
+
+#postagem h2{
+	
+width:100%;	
+float:left;
+color:#B98DE6;
+font-weight: bold;
+margin-top:20px;
+	
+}
+
+#postagem-titulo hr{
+	position:relative;
+	width:100%;
+float:left;
+}
+
+#post-single{
+	height:auto;
+	width:100%;
+	
+}
+
+#post-img{
+	
+	
+}
+
+
+/******************************
+TRANSIÇÕES :HOVER
+******************************/
+
+/*ZOOM NO CENTRO*/
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+
+/*ZOOM PARA TRAS*/
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+
+/*ROTACIONAR*/
+-webkit-transform: rotateZ(-30deg);
+-ms-transform: rotateZ(-30deg);
+transform: rotateZ(-30deg);
+
+/*ARREDONDAR*/
+ border-radius:50%;
+
+/*SOMBRA 3D*/
+box-shadow:
+1px 1px #53a7ea,
+2px 2px #53a7ea,
+3px 3px #53a7ea;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+
+/*INSERIR BORDA*/
+box-shadow: inset 0 0 0 25px #53a7ea;
+
+/*PAGINACAO*/
+
+#info-pagination{
+	
+	
+	
+}
+.page-numbers {
+	position:relative;
+    float: left;
+    margin-top: 10px;    
+	margin-bottom:10px;
+	clear:both;
+	top:0px;
+	left:0px;
+	width:100%;
+	padding:10px;
+	margin-right:10px;
+	height:auto;
+	
+}
+.page-numbers li {
+    display: inline-block;
+    margin-left: 3px;    
+}
+.page-numbers a, .page-numbers .dots, .page-numbers .next, .page-numbers .prev {
+    padding: 3px 5px;
+    background: #B98DE6;
+    text-decoration: none; 
+}
+.page-numbers a:hover, .page-numbers .next:hover, .page-numbers .prev:hover {
+    background: #B98DE6;
+	cursor:url("images/cursor.cur"), default;
+}
+.page-numbers .current {
+    padding: 3px 5px;
+    background: #B98DE6;
+    color: #FFCC00;   
+}
+/*GALERIA DE IMAGEM*/
+
+#gallery-2 {
+				margin:0 auto;
+margin-bottom:10px;
+			}
+#gallery-2 .gallery-item {
+				float: right;
+				margin-top: 10px;
+				text-align: right;
+				width: 33%;
+				height:auto;
+				margin-bottom:10px;
+			}
+#gallery-2 img {
+				margin:0 auto;
+				max-width:100%;
+				height:300px;
+				margin-bottom:30px;
+				margin-right:30%;
+				border: 2px solid #cfcfcf;
+			}
+#gallery-2 .gallery-caption {
+				margin-left: 0;
+			}
+
+			
+/*Formulario de contato*/
+
+#formulario{
+	height:600px;;
+	
+	
+}
+
+
+.campo_nome {
+border: #e6e6e6 1px solid;
+font-size: 12px;
+padding: 2px 2px 2px 6px;
+background-image:url(images/fundo_caixa_texto.png);
+background-repeat:no-repeat;
+height:20px;
+width:30%;
+margin-bottom:10px;
+}
+
+.campo_texto {
+border: #e6e6e6 1px solid;
+font-size: 12px;
+padding: 2px 2px 2px 6px;
+background-image:url(images/fundo_box_texto.png);
+background-repeat:no-repeat;
+width:50%;
+height: 138px;
+
+}
+
+.campo_enviar {
+border:2px solid #B98DE6;
+position:relative;
+top:0px;
+left:47.5%;
+font-size: 12px;
+font-weight:600;
+padding: 2px;
+background-color: #B98DE6;
+width:6%;
+height: 24px;
+color: #fff;
+margin-top: -20px;
+margin-left: -38px;
+
+}
+
+
+/*POSTAGEM BLOG*/
+
+
+.info{
+	width:100%;
+	height:auto;
+   
+	
+
+}
+
+.info-img{
+	position:relative;
+	width:50%;
+	height:170px;
+	float:left;
+	border-radius: 15px 15px 15px 15px;
+    padding:10px;
+	margin-bottom:10px;
+}
+
+#info-thumb{
+
+	float:left;
+	width:30%;
+	height:auto;
+}
+
+.info-description{
+	padding-left:10px;
+	position:relative;
+	float:right;
+	width:70%;
+	
+}
+
+
+.info-title{
+	position:relative;
+	font-weight: bold;
+	font-size:18px;
+	
+}
+
+.info-resumo{
+	position:relative;
+    text-align:justify;	
+}
+
+.info-resumo a{
+	border-radius: 5px 5px 5px 5px;
+	float:right;
+	color:#fff;	
+	background-color:#B98DE6;
+	height:auto;
+	width:30%;
+	text-align:center;
+	position:relative;
+	padding:2px;
+}
+
+.info-resumo a:hover{
+	color:#FFCC00;	
+	float:right;
+	cursor:url("images/cursor.cur"), default;
+	
+}
+
+.info h2{
+	
+width:100%;	
+float:left;
+color:#B98DE6;
+font-weight: bold;
+margin-top:20px;
+	
+}
+
+.info hr{
+	position:relative;
+	width:100%;
+}
+
+
+
+/******************************
+ERRO 404
+******************************/
+#banner{
+	margin:30px;
+
+}
+
+#conteudoBloco{
+   margin-bottom:30px;	
+}
+
